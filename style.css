@@ -33,5 +33,44 @@ h1 {
 
 .sidebar .dash-element {
   color: var(--font-color);
+  background-repeat: no-repeat;
 
+}
+
+/* Icon images for sidebar */
+
+.home {
+  background-image: url(assets/home.svg);
+}
+
+.profile {
+  background-image: url(assets/face-man-profile.svg);
+}
+
+.messages {
+  background-image: url(assets/message-badge-outline.svg);
+}
+
+.history {
+  background-image: url(assets/history.svg);
+}
+
+.tasks {
+  background-image: url(assets/calendar-check.svg);
+}
+
+.communities {
+  background-image: url(assets/account-group.svg);
+}
+
+.settings {
+  background-image: url(assets/cog.svg);
+}
+
+.support {
+  background-image: url(assets/face-agent.svg);
+}
+
+.privacy {
+  background-image: url(assets/shield-check.svg);
 }
