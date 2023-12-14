@@ -1,6 +1,6 @@
 :root {
-  --sidebar-color:#334155;
-  --font-color: #f8fafc;
+  --sidebar-color:#f1f5f9;
+  --font-color: #1e293b;
 }
 
 * {
@@ -14,6 +14,8 @@ body {
 
 h1 {
   color: var(--font-color);
+  padding-left: 60px;
+  padding-top: 10px;
 }
 .container {
   display: grid;
@@ -34,7 +36,18 @@ h1 {
 .sidebar .dash-element {
   color: var(--font-color);
   background-repeat: no-repeat;
+  height: 30px;
+  padding-left: 60px;
+  padding-top: 10px;
+  background-size: 30px;
+  background-position: 5%;
+  font-weight: bold;
+}
 
+.dash-element:hover {
+  transition: background-color 0.5s ease-in;
+  background-color: #ede9fe;
+  cursor: pointer;
 }
 
 /* Icon images for sidebar */
@@ -73,4 +86,5 @@ h1 {
 
 .privacy {
   background-image: url(assets/shield-check.svg);
+  
 }
