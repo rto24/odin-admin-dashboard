@@ -1,3 +1,8 @@
+:root {
+  --sidebar-color:#334155;
+  --font-color: #f8fafc;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +11,10 @@
 body {
   font-family: Helvetica;
 }
+
+h1 {
+  color: var(--font-color);
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -13,12 +22,16 @@ body {
 
 .sidebar {
   height: 100vh;
+  background-color: var(--sidebar-color);
   display: grid;
-  grid-template-columns: minmax(250px, 300px);
+  grid-template-columns: min(300px);
+  grid-template-rows: repeat(10, 50px);
   gap: 5px;
   grid-row: 1 / 11;
+
 }
 
 .sidebar .dash-element {
-  background-color: blue;
+  color: var(--font-color);
+
 }
