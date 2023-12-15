@@ -125,6 +125,7 @@ body {
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(3, minmax(300px, 1fr));
   grid-column: 2 / 4;
   padding-left: 8%;
 }
@@ -141,6 +142,7 @@ body {
   width: 75%;
   padding: 40px;
   background-color: var(--sidebar-color);
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
@@ -150,4 +152,5 @@ body {
 .card-info > img {
   width: 7%;
   padding-top: 20px;
+  cursor: pointer;
 }
