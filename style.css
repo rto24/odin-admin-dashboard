@@ -92,7 +92,7 @@ body {
   
 }
 
-/* header */
+/* Header */
 
 .header {
   display: grid;
@@ -154,3 +154,25 @@ body {
   padding-top: 20px;
   cursor: pointer;
 }
+
+/* Announcements */
+
+.announcement {
+  display: grid;
+  height: 35vh;
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
+  padding-right: 20%;
+}
+
+.announcement .announcement-info {
+  background-color: var(--font-color);
+  color: var(--sidebar-color);
+  padding: 20px;
+  text-align: center;
+  border: var(--sidebar-color) 1px solid;
+  border-radius: 10px;
+}
+
+
+
+
