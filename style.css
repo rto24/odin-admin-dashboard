@@ -136,7 +136,8 @@ body {
 }
 
 .card-info {
-  border: 1px solid black;
+  border-left: var(--font-color) 10px solid;
+  border-radius: 10px;
   width: 75%;
   padding: 40px;
   background-color: var(--sidebar-color);
@@ -144,4 +145,9 @@ body {
 
 .card-title {
   padding-bottom: 50px;
+}
+
+.card-info > img {
+  width: 7%;
+  padding-top: 20px;
 }
