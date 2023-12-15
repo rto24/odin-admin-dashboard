@@ -12,11 +12,6 @@ body {
   font-family: Helvetica;
 }
 
-h1 {
-  color: var(--font-color);
-  padding-left: 60px;
-  padding-top: 10px;
-}
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -43,6 +38,13 @@ h1 {
   background-size: 30px;
   background-position: 5%;
   font-weight: bold;
+}
+
+.sidebar .dash-header {
+  font-weight: bold;
+  align-self: center;
+  font-size: 30px;
+  padding-left: 10px;
 }
 
 .dash-element:hover {
