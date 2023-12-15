@@ -19,14 +19,15 @@ h1 {
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
   height: 100vh;
   background-color: var(--sidebar-color);
   display: grid;
-  grid-template-columns: min(300px);
+  grid-template-columns: minmax(300px, 1fr);
   grid-template-rows: repeat(10, 50px);
   gap: 5px;
   grid-row: 1 / 11;
@@ -45,8 +46,8 @@ h1 {
 }
 
 .dash-element:hover {
-  transition: background-color 0.5s ease-in;
-  background-color: #ede9fe;
+  transition: color 0.3s ease-in;
+  color: #c4b5fd;
   cursor: pointer;
 }
 
@@ -87,4 +88,32 @@ h1 {
 .privacy {
   background-image: url(assets/shield-check.svg);
   
+}
+
+/* header */
+
+.header {
+  display: grid;
+  grid-column: 2 / 4;
+  justify-items: center;
+}
+
+.header-text {
+  display: flex;
+  position: relative;
+  top: 30px;
+  height: 50%;
+  width: 90%;
+  align-items: center;
+  gap: 15px;
+  background: var(--font-color);
+  border-radius: 10px;
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.3);
+  
+}
+
+.header .text {
+  color: var(--sidebar-color);
+  font-weight: bold;
+  padding-left: 30px;
 }
