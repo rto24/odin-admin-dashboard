@@ -14,7 +14,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 3fr 3fr 2fr;
   grid-template-rows: 1fr 5fr;
 }
 
@@ -132,10 +132,16 @@ body {
 .content .card {
   display: flex;
   flex-direction: column;
-
+  justify-content: flex-start;
 }
 
 .card-info {
   border: 1px solid black;
-  width: 50%;
+  width: 75%;
+  padding: 40px;
+  background-color: var(--sidebar-color);
+}
+
+.card-title {
+  padding-bottom: 50px;
 }
