@@ -14,7 +14,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-rows: 1fr 5fr;
 }
 
@@ -96,7 +96,7 @@ body {
 
 .header {
   display: grid;
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
   justify-items: center;
 }
 
@@ -118,4 +118,11 @@ body {
   color: var(--sidebar-color);
   font-weight: bold;
   padding-left: 30px;
+}
+
+/* Cards */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
